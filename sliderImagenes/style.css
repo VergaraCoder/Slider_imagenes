@@ -1,0 +1,100 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.containerImagenes{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: red;
+    display: flex;
+}
+
+.derecha , .izquierda{
+    position: absolute;
+    z-index: 10;
+}
+
+.derecha{
+    top: 50%;
+    right: 10%;
+    width: 4%;
+    font-size: 200%;
+}
+
+
+.izquierda{
+    top: 50%;
+    left: 10%;
+    width: 4%;
+    font-size: 200%;
+    background-position: center;
+
+}
+
+.ri-arrow-right-fill{
+    padding: 15% 20%;
+
+}
+
+.ri-arrow-left-fill{
+    padding: 15% 20%;
+
+}
+
+.container-IMAGEN1{
+    background-image: url(/sliderImagenes/img/img/dog-1839808_1920.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    transition: .6s;
+
+
+}
+
+
+.container-IMAGEN2{
+    background-image: url(/sliderImagenes/img/img/dog-2063281_1920.jpg);
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+
+    height: 100%;
+    position: absolute;
+    transition: .6s;
+
+
+}
+
+
+
+.container-IMAGEN3{
+    background-image: url(/sliderImagenes/img/img/dog-3277416_1920.jpg);
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    transition: .6s;
+
+}
+
+.avanza{
+    transform: translateX(100%);
+    transition: .6s;
+}
+
+.iniciar{
+    transform: translateX(0%);
+    transition: .6s;
+}
+
+.retrocede{
+    transform: translateX(-100%);
+    transition: .6s;
+}
